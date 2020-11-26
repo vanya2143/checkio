@@ -25,7 +25,7 @@ def between_markers(text: str, begin: str, end: str) -> str:
     except ValueError:
         second = len(text)
 
-    return '' if first > second else text[first:second]
+    return text[first:second]
 
 
 if __name__ == '__main__':
