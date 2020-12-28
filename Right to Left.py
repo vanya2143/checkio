@@ -1,4 +1,6 @@
 """
+https://py.checkio.org/ru/mission/right-to-left/
+
 "На протяжении веков, левши страдали от дискриминации в мире, созданном для правшей."
 Santrock, John W. (2008). Motor, Sensory, and Perceptual Development.
 

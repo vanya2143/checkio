@@ -1,4 +1,6 @@
 """
+https://py.checkio.org/ru/mission/count-digits/
+
 You need to count the number of digits in a given string.
 """
 

@@ -1,4 +1,6 @@
 """
+https://py.checkio.org/ru/mission/backward-each-word/
+
 In a given string you should reverse every word, but the words should stay in their places.
 
 Input: A string.
