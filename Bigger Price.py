@@ -1,4 +1,6 @@
 """
+https://py.checkio.org/ru/mission/bigger-price/
+
 Дана таблица всех доступных продуктов на складе.
 Данные представлены в виде списка словарей (a list of dicts)
 
