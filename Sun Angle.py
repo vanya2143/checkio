@@ -14,7 +14,7 @@ def sun_angle(time):
     start = 21600  # 6:00 in seconds
     finish = 64800  # 18:00 in seconds
 
-    one_degree = (finish - start) / 180
+    one_degree = (finish - start) / 180  # one degree in seconds
     h, m = time.split(':')
     time_in_seconds = (int(h) * 60 ** 2) + (int(m) * 60)
 
