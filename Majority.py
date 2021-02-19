@@ -9,9 +9,7 @@ Some cases worth mentioning:
 
 
 def is_majority(items: list) -> bool:
-    t = items.count(True)
-    f = items.count(False)
-    return True if t > f else False
+    return sum(items) > len(items) / 2
 
 
 if __name__ == '__main__':
