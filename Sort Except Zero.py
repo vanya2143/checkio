@@ -8,15 +8,13 @@ from typing import Iterable
 
 
 def except_zero(items: list) -> Iterable:
-    items_copy = items.copy()
     zero_indexes = []
 
     for index, x in enumerate(items):
         if x == 0:
             zero_indexes.append(index)
-            _ = items_copy.pop(items_copy.index(0))
 
-    items_copy.sort()
+    items_copy = sorted([x for x in items if x != 0])
 
     for x in zero_indexes:
         items_copy.insert(x, 0)
