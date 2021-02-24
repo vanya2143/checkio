@@ -11,20 +11,20 @@ https://py.checkio.org/ru/mission/flatten-dict/
 
 def flatten(dictionary):
     items = list(dictionary.items())
-    flat_items = []
+    flat_dict = {}
 
     while items:
         item = items.pop()
 
-        if type(item[1]) == dict and len(item[1]):
+        if isinstance(item[1], dict) and len(item[1]):
             for i in item[1]:
                 items.append((item[0] + '/' + i, item[1].get(i)))
         elif len(item[1]) == 0:
-            flat_items.append((item[0], ""))
+            flat_dict[item[0]] = ""
         else:
-            flat_items.append(item)
+            flat_dict[item[0]] = item[1]
 
-    return dict(flat_items)
+    return flat_dict
 
 
 if __name__ == '__main__':
